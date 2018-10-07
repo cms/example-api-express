@@ -1,7 +1,7 @@
 {
   "name": "cbs-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "CBS API",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
