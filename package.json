@@ -6,8 +6,9 @@
   "scripts": {
     "test": "jest",
     "babel-node": "babel-node --presets=env",
-    "start": "nodemon --exec npm run babel-node -- ./index.js",
-    "build": "babel src -d dist"
+    "start": "nodemon --exec npm run babel-node -- ./src/index.js",
+    "build": "babel src -d dist --presets env",
+    "serve": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
