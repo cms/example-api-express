@@ -4,8 +4,10 @@
   "description": "CBS API",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "jest"
+    "test": "jest",
+    "babel-node": "babel-node --presets=env",
+    "start": "nodemon --exec npm run babel-node -- ./index.js",
+    "build": "babel src -d dist"
   },
   "keywords": [],
   "author": "",
@@ -28,5 +30,17 @@
     "jest": "^23.6.0",
     "nodemon": "^1.18.4",
     "prettier": "^1.14.3"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
   }
 }
